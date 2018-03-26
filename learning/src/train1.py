@@ -5,7 +5,7 @@ from urllib.request import urlopen
 
 a,b=input('문자를 2개 입력하세요 :  ').split()
 if (a=='숫자' and b=='10'):
-    print('와우 '+a+'가 '+b+'네요.')
+    print('와우 {}가 {}네요.'.format(a,b))
     print('if탔군...')
 else:
     print(a+'는',b+'입니다.')

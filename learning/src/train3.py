@@ -1,3 +1,4 @@
+
 def is_int(x):
     try:
         if int(x)==x:
@@ -21,17 +22,15 @@ def is_prime(x):
         x=int(x)
     except: 
         ValueError
-        return u'2이상의 정수를 입력하세요'
-    if x<2:return u'2이상의 정수를 입력하세요'
+        return '2이상의 정수를 입력하세요'
+    if x<2:return '2이상의 정수를 입력하세요'
     for i in range(2,x):
         if x % i == 0:
-            return u'합성수'
+            return '합성수'
     else:
-        return u'소수'
-x = input(u'소수판별기, 정수로 입력하세요 :')
+        return '소수'
+x = input('소수판별기, 정수로 입력하세요 :')
 print (is_prime(x))
-
 print ('abcde!@#$%'[::-1])
-
 print (type(range(6)))
 print ('abcde!@#$%'.strip('ae'))
