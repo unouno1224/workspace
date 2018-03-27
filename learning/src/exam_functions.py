@@ -52,15 +52,24 @@ def get_score_list(subject,dic_list):
 
 def get_average(scores):
     sum=0
-    for score in scores:
-        sum += score
-    return round(sum/len(scores), 2)
+    try:
+        for score in scores:
+            sum += score
+        return round(sum/len(scores), 2)
+    except:
+        return '값 오류'
 def get_variance(scores,avrg):
     var=0
-    for score in scores:
-        var+=(score-avrg)**2
-    return round(var/len(scores),2)
+    try:
+        for score in scores:
+            var+=(score-avrg)**2
+        return round(var/len(scores),2)
+    except:
+        return '값 오류'
 def get_std_dev(variance):
-    return round(mt.sqrt(variance),2)
+    try:
+        return round(mt.sqrt(variance),2)
+    except:
+        return '값 오류'
 
 
