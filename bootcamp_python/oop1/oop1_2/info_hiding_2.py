@@ -2,7 +2,7 @@ class Account:
     def __init__(self, name, money):
         self.user = name
         self.__balance = money#1
-
+        
     def get_balance(self):
         return self.__balance#2
 
@@ -17,4 +17,4 @@ if __name__ == "__main__":
     my_acnt.__balance = -3000#4
 
     print(my_acnt.get_balance())
-    
+    print(my_acnt.__dict__)
